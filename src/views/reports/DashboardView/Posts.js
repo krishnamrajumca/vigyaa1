@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
-import fillYears from 'src/utils/fillYears';
+import fillYears from '../../../utils/fillYears';
 import PropTypes from 'prop-types';
-import StockedChart from 'src/graphs/stocked';
+import StockedChart from '../../../graphs/stocked';
 import {
   Box,
   Card,

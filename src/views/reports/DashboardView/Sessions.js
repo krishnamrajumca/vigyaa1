@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import fillYears from 'src/utils/fillYears';
+import fillYears from '../../../utils/fillYears';
 import {
   Box,
   Card,
@@ -11,8 +11,8 @@ import {
   Divider,
   makeStyles,
 } from '@material-ui/core';
-import LineChart from 'src/graphs/lineChart';
-import BarChart from 'src/graphs/barChart';
+import LineChart from '../../../graphs/lineChart';
+import BarChart from '../../../graphs/barChart';
 
 const useStyles = makeStyles(() => ({
   root: {}

@@ -12,7 +12,7 @@ import {
   makeStyles
 } from '@material-ui/core';
 
-import Page from 'src/components/Page';
+import Page from '../../components/Page';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,7 +49,7 @@ const LoginView = () => {
               password: Yup.string().max(255).required('Password is required')
             })}
             onSubmit={() => {
-              navigate('/app/dashboard', { replace: true });
+              navigate('/app', { replace: true });
             }}
           >
             {({

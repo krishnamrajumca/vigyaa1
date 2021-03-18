@@ -4,12 +4,12 @@ import {
   Grid,
   makeStyles
 } from '@material-ui/core';
-import Page from 'src/components/Page';
+import Page from '../../../components/Page';
 import Paper from '@material-ui/core/Paper';
-import LiveCount from 'src/components/LiveCount';
-import Daterange from 'src/components/DateRange';
+import LiveCount from '../../../components/LiveCount';
+import Daterange from '../../../components/DateRange';
 import { useSelector, useDispatch } from 'react-redux';
-import actions from 'src/redux/actions';
+import actions from '../../../redux/actions';
 import Budget from './Budget';
 import Sessions from './Sessions';
 import TasksProgress from './TasksProgress';

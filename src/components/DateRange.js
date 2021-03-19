@@ -42,12 +42,12 @@ const Daterange = (props) => {
     const date = new Date();
     const range = [{
       label: 'Today',
-      startDate: date,
+      startDate: addDays(date, -1),
       endDate: date,
     },
     {
       label: 'Yesterday',
-      startDate: addDays(date, -1),
+      startDate: addDays(date, -2),
       endDate: addDays(date, -1),
     },
     {

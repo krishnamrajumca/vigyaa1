@@ -116,9 +116,12 @@ const Dashboard = () => {
           </Grid>
         </Grid>
         <Paper className={classes.paper}>
-          <Grid container spacing={3} justify="flex-end">
-            <Grid item lg={3} sm={6} xl={3} xs={12}>
+          <Grid container spacing={3} >
+            <Grid item lg={6} sm={6} xl={6} xs={12} justify="flex-start" style={{textAlign:'initial'}}>
               <Daterange onDateChange={onDateChange} />
+            </Grid>
+            <Grid item lg={6} sm={6} xl={6} xs={12} justify="flex-end" style={{textAlign:'end'}}>
+              <div>download</div>
             </Grid>
           </Grid>
         </Paper>

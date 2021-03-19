@@ -36,7 +36,7 @@ const Daterange = (props) => {
     console.log('formated', start, end);
     setDates({ startDate: start, endDate: end });
     props.onDateChange({ start_date: start, end_date: end });
-  }, [dateRange,props]);
+  }, [dateRange]);
   const dateRanges = () => {
     const date = new Date();
     const range = [{

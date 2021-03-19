@@ -59,7 +59,7 @@ const Dashboard = () => {
     dispatch(actions.fetchSessionsData(dates));
     dispatch(actions.fetchReplyData(dates));
     dispatch(actions.fetchPublishedData(dates));
-  }, [dates,dispatch]);
+  }, [dates]);
   useEffect(() => {
     dispatch(actions.fetchLiveUsers());
     const interval = setInterval(() => {
@@ -68,7 +68,7 @@ const Dashboard = () => {
     return () => {
       clearInterval(interval);
     };
-  }, [dispatch]);
+  }, []);
   useEffect(() => {
     const { session_details } = sessions;
     const session_count = session_details.reduce((a, b) => (a + b.session_count), 0);

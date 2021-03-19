@@ -1,7 +1,7 @@
 import moment from 'moment';
 import _ from 'lodash';
 
-export default (data, fillObj, dates, key) => {
+const fillYears = (data, fillObj, dates, key) => {
   const { start_date, end_date } = dates;
   const diff = moment(end_date).diff(moment(start_date), 'days');
   const temp = [];
@@ -18,3 +18,5 @@ export default (data, fillObj, dates, key) => {
   }
   return temp;
 };
+
+export default fillYears;

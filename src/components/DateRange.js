@@ -31,13 +31,12 @@ const Daterange = (props) => {
   const [dates, setDates] = useState({});
   const [dateRange, setDateRange] = useState({ label: 'Today', startDate: new Date(), endDate: new Date() });
   useEffect(() => {
-    console.log('hello', dateRange);
     const start = moment(dateRange.startDate).format('YYYY-MM-DD');
     const end = moment(dateRange.endDate).format('YYYY-MM-DD');
     console.log('formated', start, end);
     setDates({ startDate: start, endDate: end });
     props.onDateChange({ start_date: start, end_date: end });
-  }, [dateRange]);
+  }, [dateRange,props]);
   const dateRanges = () => {
     const date = new Date();
     const range = [{

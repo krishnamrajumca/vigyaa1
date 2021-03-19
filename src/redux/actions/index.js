@@ -38,10 +38,10 @@ const fetchPublishedData = (dates) => {
     });
   };
 };
-
-export default {
+const actions = {
  fetchLiveUsers,
  fetchPublishedData,
  fetchReplyData,
  fetchSessionsData
 };
+export default actions;

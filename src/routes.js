@@ -12,15 +12,15 @@ const routes = [
     path: 'app',
     element: <DashboardLayout />,
     children: [
-      { path: '/', element: <DashboardView /> },
+      { path: '', element: <DashboardView /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   },
   {
-    path: '/',
+    path: '',
     element: <MainLayout />,
     children: [
-      { path: '/', element: <LoginView /> },
+      { path: '', element: <LoginView /> },
       { path: 'register', element: <RegisterView /> },
       { path: '404', element: <NotFoundView /> },
       { path: '*', element: <Navigate to="/404" /> }
